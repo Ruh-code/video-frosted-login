@@ -1,0 +1,103 @@
+
+        /* Remove default margin/padding */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+        }
+
+        .background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .login-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-card h2 {
+            margin-bottom: 20px;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        .login-card input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255,255,255,0.3);
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .login-card input::placeholder {
+            color: #eee;
+        }
+
+        .login-card button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 12px;
+            background-color: #82DEA2;
+            border: none;
+            border-radius: 5px;
+            color: #141441;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-card button:hover {
+            background-color: #45a049;
+        }
+
+.row-remember-forgot{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    align-items:center;        
+    gap:16px;
+    margin-top:10px;
+    text-align:left;          
+  }
+.row-remember-forgot label{
+    display:inline-flex;       
+    align-items:center;
+    gap:8px;
+    color:#fff;
+    white-space:nowrap;
+    cursor:pointer;
+  }
+.row-remember-forgot a{
+    color:#fff;
+    text-decoration:none;
+    white-space:nowrap;      
+  }
+.row-remember-forgot a:hover{ text-decoration:underline; }
+
+.title-mask{
+  width:100%;
+  height:110px;          
+  margin-bottom:16px;
+}
+.title-svg{ width:100%; height:100%; display:block; }
+.title-video{ width:100%; height:100%; object-fit:cover; display:block; }
+
