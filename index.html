@@ -2,10 +2,18 @@
 <head>
     <title>Sign In Webpage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="javascript.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
+<button class="mode-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+  <span class="mode-dot"></span>
+</button>
+
 <body>
 <div class="background">
-    <video autoplay loop muted plays-inline>
+    <video autoplay loop muted playsinline>
         <source src="video/abstract-background.mp4" type="video/mp4">
     </video>
 </div>
@@ -21,7 +29,7 @@
          fill="white"
          font-size="110"
          font-weight="800"                              
-         font-family="Montserrat, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+         font-family: 'Orbitron', sans-serif
          font-stretch=""
          letter-spacing="4">
          LOGIN
@@ -40,7 +48,22 @@
         <form>
             <input type="text" placeholder="Username" name="username">
             <input type="password" placeholder="Password" name="password">
-            <button type="submit">Sign In</button>
+            <button type="submit" class="btn-signin" aria-live="polite">
+  <span class="btn-icon">
+    <!-- arrow -->
+    <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 12h12M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <!-- check -->
+    <svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <!-- loader -->
+    <span class="loader"></span>
+  </span>
+  <span class="btn-text">Sign In</span>
+</button>
+
             <div class="row-remember-forgot">
                 <label><input type="checkbox" id="ck" name="ck"> Remember Me</label>
                 <a href="#">Forgot Password?</a>
